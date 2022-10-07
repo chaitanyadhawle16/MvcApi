@@ -32,13 +32,9 @@ E:\DotNet\myApp\obj\Debug\net6.0\myApp.AssemblyInfoInputs.cache
 E:\DotNet\myApp\obj\Debug\net6.0\myApp.AssemblyInfo.cs
 E:\DotNet\myApp\obj\Debug\net6.0\myApp.csproj.CoreCompileInputs.cache
 E:\DotNet\myApp\obj\Debug\net6.0\myApp.MvcApplicationPartsAssemblyInfo.cache
-E:\DotNet\myApp\obj\Debug\net6.0\myApp.RazorAssemblyInfo.cache
-E:\DotNet\myApp\obj\Debug\net6.0\myApp.RazorAssemblyInfo.cs
 E:\DotNet\myApp\obj\Debug\net6.0\staticwebassets.build.json
 E:\DotNet\myApp\obj\Debug\net6.0\staticwebassets.development.json
-E:\DotNet\myApp\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 E:\DotNet\myApp\obj\Debug\net6.0\scopedcss\bundle\myApp.styles.css
-E:\DotNet\myApp\obj\Debug\net6.0\scopedcss\projectbundle\myApp.bundle.scp.css
 E:\DotNet\myApp\obj\Debug\net6.0\myApp.csproj.CopyComplete
 E:\DotNet\myApp\obj\Debug\net6.0\myApp.dll
 E:\DotNet\myApp\obj\Debug\net6.0\refint\myApp.dll

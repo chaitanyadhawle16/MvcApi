@@ -11,4 +11,5 @@ public class ProductDetails{
      public string Brand { get; set;}
      public string Category { get; set;}
      public string Thumbnail { get; set;}
+     public List<String> Images {get; set;}
 }

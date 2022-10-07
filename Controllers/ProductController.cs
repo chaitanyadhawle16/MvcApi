@@ -10,15 +10,15 @@ public class ProductController : Controller{
     {
         _logger = logger;
     }
-
-    public List<dynamic> GetAllProducts(){
+    
+    public List<ProductDetails> GetAllProducts(){
         return ProductRepository.getProductList();
     }
 
-    public List<dynamic> GetProducts(string brand = "", string category = "", int minPrice = 0, int maxPrice = 0, int page = 1){
+    public List<ProductDetails> GetProducts(string brand = "", string category = "", int minPrice = 0, int maxPrice = 0, int page = 1){
         int productsPerPage = 5;
         var filteredProducts = ProductRepository.getProductList(brand,category,minPrice,maxPrice);
-        IPagedList<dynamic> productList = filteredProducts.ToPagedList(page, productsPerPage);
+        IPagedList<ProductDetails> productList = filteredProducts.ToPagedList(page, productsPerPage);
         return productList.ToList();
     }
 }

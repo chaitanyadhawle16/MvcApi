@@ -2,6 +2,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddCors(options =>
+    {
+        options.AddPolicy("CorsPolicy", builder => builder.AllowAnyOrigin()
+        .AllowAnyHeader());
+    }   
+);
 
 var app = builder.Build();
 
@@ -15,13 +21,13 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+app.UseCors("CorsPolicy");
 app.UseRouting();
 
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Product}/{action=GetAllProducts}/{id?}");
+    pattern: "{controller=Product}/{action=GetProducts}/{id?}");
 
 app.Run();

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Y3n8HDEvXL1Q3BeKcpAphE5EnmI/mLuUl6e98fpnyWs=",
+  "Hash": "8erELL/i71KaGlDbkPbaGCJcdrIlesp63HQefdhrbRc=",
   "Source": "myApp",
   "BasePath": "_content/myApp",
   "Mode": "Default",
@@ -16,40 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "E:\\DotNet\\myApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\myApp.styles.css",
-      "SourceId": "myApp",
-      "SourceType": "Computed",
-      "ContentRoot": "E:\\DotNet\\myApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/myApp",
-      "RelativePath": "myApp.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\DotNet\\myApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\myApp.styles.css"
-    },
-    {
-      "Identity": "E:\\DotNet\\myApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\myApp.bundle.scp.css",
-      "SourceId": "myApp",
-      "SourceType": "Computed",
-      "ContentRoot": "E:\\DotNet\\myApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/myApp",
-      "RelativePath": "myApp.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\DotNet\\myApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\myApp.bundle.scp.css"
-    },
     {
       "Identity": "E:\\DotNet\\myApp\\wwwroot\\css\\site.css",
       "SourceId": "myApp",
