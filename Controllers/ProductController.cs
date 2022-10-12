@@ -4,7 +4,6 @@ using PagedList;
 
 namespace myApp.Controllers{
 public class ProductController : Controller{
-
     private readonly ILogger<ProductController> _logger;
     public ProductController(ILogger<ProductController> logger)
     {
@@ -15,8 +14,8 @@ public class ProductController : Controller{
         return ProductRepository.getProductList();
     }
 
-    public List<ProductDetails> GetProducts(string brand = "", string category = "", int minPrice = 0, int maxPrice = 0, int page = 1){
-        int productsPerPage = 5;
+    public List<ProductDetails> GetProducts(string brand = "", string category = "", string minPrice = "0", string maxPrice = "99999", int page = 1){
+        int productsPerPage = 5;    
         var filteredProducts = ProductRepository.getProductList(brand,category,minPrice,maxPrice);
         IPagedList<ProductDetails> productList = filteredProducts.ToPagedList(page, productsPerPage);
         return productList.ToList();

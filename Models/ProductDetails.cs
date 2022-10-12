@@ -1,3 +1,4 @@
+
 namespace myApp.Models;
 
 public class ProductDetails{
