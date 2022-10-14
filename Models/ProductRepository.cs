@@ -37,13 +37,11 @@ namespace myApp.Models{
         }
 
         public static List<String> getImageList(int id){
-            
-            // String sQuery = $"SELECT * FROM ( SELECT image1 AS col FROM image where imageId={id} UNION SELECT image2 AS col FROM image where imageId={id} UNION SELECT image3 AS col FROM image where imageId={id} UNION SELECT image4 AS col FROM image where imageId={id} UNION SELECT image5 AS col FROM image where imageId={id} UNION SELECT image6 AS col FROM image where imageId={id}) image WHERE col IS NOT NULL";
             String sQuery = $"SELECT imageURL FROM product_images WHERE productID = {id}";
             List<String> imageList = connection.Query<String>(sQuery).ToList();
             return imageList;
         }
-        //fetch all products
+        
         public static List<ProductDetails> getProductList(){
             string sQuery = "SELECT * FROM product";
             List<ProductDetails> productList = connection.Query<ProductDetails>(sQuery).ToList();
@@ -53,7 +51,6 @@ namespace myApp.Models{
             return productList;
         }
 
-        // fetch products in a single page
         public static List<ProductDetails> getProductList(string brand, string category, string minPrice, string maxPrice){
             if(brand!="") brand = applyFilters(brand);
             if(category!="") category = applyFilters(category);
